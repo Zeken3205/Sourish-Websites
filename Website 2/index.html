@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav" id="nav-container">
+            <div class="flex">
+                <h1 class="name">TRAVEL</h1>
+                <h1 class="name">STUDIO</h1>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/" class="nav-link">Compare Plans</a></li>
+                    <li><a href="/" class="nav-link">Calms</a></li>
+                    <li><a href="/" class="nav-link">Help Center</a></li>
+                    <li><a href="/" class="nav-link">Coverage Alerts</a></li>
+                    <li><a href="/" class="nav-link">About</a></li>
+                </ul>
+                <div id="logos">
+                    <img src="./icons8-mail-24.png" class="icon">
+                    <img src="./icons8-phone-24.png" class="icon">
+                </div>
+                <button class="pr-10" onclick="navigateToLogin()">
+                    <p>Login</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div class="overlay"></div>
+                <div class="card">
+                    <p>Help us choose the right plan for you</p>
+                    <div id="radios" class="flex justify-evenly">
+                        <div>
+                            <input type="radio" id="one-trip" name="trip-type" value="one-trip" checked>
+                            <label for="one-trip">One Trip</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="annual" name="trip-type" value="annual">
+                            <label for="annual">Annual</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" id="dates-of-travel" class="text-spaces" placeholder="Dates of Travel">
+                        <input type="text" id="state-of-residence" class="text-spaces" placeholder="State of Residence">
+                        <input type="text" id="traveler-info" class="text-spaces" placeholder="Traveler Info">
+                        <input type="text" id="initial-payment" class="text-spaces" placeholder="Initial Payment">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button onclick="getQuote()" id="getquote-btn">Get a Quote</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
